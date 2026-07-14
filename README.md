@@ -1,10 +1,10 @@
-# 🚑 Smart Emergency Response System
+# Smart Emergency Response System
 
 A full-stack real-time emergency dispatch platform that automates ambulance assignment, live GPS tracking, and hospital bed management.
 
 ---
 
-## 🎥 What It Does
+## What It Does
 
 When a dispatcher reports a **P1 (Critical)** or **P2 (Serious)** incident:
 
@@ -15,7 +15,7 @@ When a dispatcher reports a **P1 (Critical)** or **P2 (Serious)** incident:
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 | Layer | Technology | Why |
 |---|---|---|
@@ -29,7 +29,7 @@ When a dispatcher reports a **P1 (Critical)** or **P2 (Serious)** incident:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 \`\`\`bash
 git clone https://github.com/YOUR-USERNAME/emergency-response-system.git
@@ -50,7 +50,7 @@ backend | Started EmergencyResponseApplication
 
 ---
 
-## 🌱 Seed Test Data
+## Seed Test Data
 
 \`\`\`bash
 # 1. Add an ambulance
@@ -76,7 +76,7 @@ curl -X POST http://localhost:8080/api/incidents \
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### Incidents
 | Method | Endpoint | Description |
@@ -109,7 +109,7 @@ curl -X POST http://localhost:8080/api/incidents \
 
 ---
 
-## 📊 WebSocket Events
+## WebSocket Events
 
 Connect to ws://localhost:8080/api/ws/emergency
 
@@ -122,7 +122,7 @@ Connect to ws://localhost:8080/api/ws/emergency
 
 ---
 
-## 🔥 Load Testing
+## Load Testing
 
 Load tested with k6 simulating 150 concurrent dispatchers (22,000+ requests):
 
@@ -141,7 +141,7 @@ Bug 2 - Incident number collision: Random 4-digit suffix (9,000 values) caused b
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 \`\`\`
 emergency-response-system/
@@ -173,7 +173,7 @@ docker-compose down -v     # wipe data
 
 ---
 
-## ⚠️ Production Checklist (not implemented - portfolio project)
+## Production Checklist (not implemented - portfolio project)
 
 - [ ] JWT authentication on all endpoints
 - [ ] PostGIS for indexed geospatial queries at scale
