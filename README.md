@@ -130,10 +130,9 @@ Bug 1 - Redis cache serialization: RouteResult was annotated @Cacheable but did 
 Bug 2 - Incident number collision: Random 4-digit suffix (9,000 values) caused birthday-paradox collisions at 40 dispatches/sec. Fixed by switching to UUID-derived suffix.
 
 ---
-
 ## Project Structure
 
-\`\`\`
+```
 emergency-response-system/
 ├── backend/                          Spring Boot (Java 21)
 │   └── src/main/java/com/emergency/
@@ -150,11 +149,10 @@ emergency-response-system/
 │       └── lib/                      API client, WebSocket hook
 ├── loadtest/                         k6 load test scripts
 └── docker-compose.yml
-\`\`\`
-
+```
 ---
 
-## 🏁 Stop
+## Stop
 
 \`\`\`bash
 docker-compose down        # keep data
