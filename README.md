@@ -37,16 +37,12 @@ When a dispatcher reports a **P1 (Critical)** or **P2 (Serious)** incident:
 | API Swagger | http://localhost:8080/api/swagger-ui.html |
 | WebSocket | ws://localhost:8080/api/ws/emergency |
 
-First run takes **8–15 minutes**. Ready when you see:
-\`\`\`
-backend | Started EmergencyResponseApplication
-\`\`\`
+First run takes **8–15 minutes**. 
 
 ---
 
 ## Seed Test Data
 
-\`\`\`bash
 # 1. Add an ambulance
 curl -X POST http://localhost:8080/api/ambulances \
   -H "Content-Type: application/json" \
