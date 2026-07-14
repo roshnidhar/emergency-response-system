@@ -17,25 +17,19 @@ When a dispatcher reports a **P1 (Critical)** or **P2 (Serious)** incident:
 
 ## Tech Stack
 
-| Layer | Technology | Why |
-|---|---|---|
-| Backend | Spring Boot 3 (Java 21) | REST API, dispatch logic, WebSocket server |
-| Database | PostgreSQL 16 | Relational data, geospatial Haversine queries |
-| Cache | Redis 7 | GPS location caching (60s TTL), OSRM route caching |
-| Real-time | WebSocket (Spring) | Live GPS tracking pushed to all dashboards |
-| Routing | OSRM (OpenStreetMap) | Real driving ETA — free, no API key needed |
-| Frontend | React 18 + Vite + Tailwind | Live dashboard, Leaflet interactive map |
-| Container | Docker + Nginx | Single-command startup |
+| Layer | Technology |
+|---|---|
+| Backend | Spring Boot 3 (Java 21) | 
+| Database | PostgreSQL 16 |
+| Cache | Redis 7 |
+| Real-time | WebSocket (Spring) |
+| Routing | OSRM (OpenStreetMap) |
+| Frontend | React 18 + Vite + Tailwind |
+| Container | Docker + Nginx |
 
 ---
 
-## Quick Start
-
-\`\`\`bash
-git clone https://github.com/YOUR-USERNAME/emergency-response-system.git
-cd emergency-response-system
-docker-compose up --build
-\`\`\`
+## Quick Star
 
 | Service | URL |
 |---|---|
