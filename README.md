@@ -160,12 +160,3 @@ docker-compose down -v     # wipe data
 \`\`\`
 
 ---
-
-## Production Checklist (not implemented - portfolio project)
-
-- [ ] JWT authentication on all endpoints
-- [ ] PostGIS for indexed geospatial queries at scale
-- [ ] Self-hosted OSRM or paid routing API for SLA
-- [ ] Exponential backoff on WebSocket reconnection
-- [ ] Flyway migrations instead of ddl-auto: update
-- [ ] Prometheus + Grafana metrics
